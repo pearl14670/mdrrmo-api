@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] !== 'POST') {
 
 try {
    // db_connection.php is in the repository's src directory.
-   require_once _DIR_ . '/../../../src/db_connection.php';
+   require_once __DIR__ . '/../../../src/db_connection.php';
 
    if (!function_exists('getDatabaseConnection')) {
        throw new RuntimeException(
