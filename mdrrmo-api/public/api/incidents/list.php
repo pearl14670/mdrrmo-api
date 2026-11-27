@@ -65,7 +65,7 @@ try {
     * Assumes the deployed structure places src/ at /var/www/src/.
     * Confirm this path against your Dockerfile.
     */
-   $databaseFile = dirname(_DIR_, 3)
+   $databaseFile = dirname(__DIR__, 3)
        . '/src/db_connection.php';
 
    if (
