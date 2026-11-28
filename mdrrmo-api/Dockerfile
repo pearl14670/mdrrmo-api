@@ -36,5 +36,3 @@ EXPOSE 10000
 
 # Start Apache using Render's port
 CMD ["/usr/local/bin/render-entrypoint"]
-
-COPY test-db.php /var/www/html/test-db.php
